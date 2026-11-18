@@ -1,0 +1,4 @@
+# Serve the Markdown pages as UTF-8 text: browsers display them inline and
+# agents can read the raw source. No rendering step is involved.
+AddType text/plain .md
+AddCharset UTF-8 .md

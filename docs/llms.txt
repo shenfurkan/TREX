@@ -1,0 +1,47 @@
+# TREX documentation
+
+> TREX estimates conditional false-positive probabilities (FPP and NFPP) for
+> TESS transit signals using the scenario framework of Giacalone et al. (2021).
+> This directory documents TREX 1.0.0: installation, inputs, the calculation,
+> outputs, the Python API and the acquisition paths. TREX does not validate or
+> confirm planets; `claim_eligible` is always false.
+
+All pages are plain Markdown at stable URLs. Base URL:
+https://trex.fezadan.org/docs/
+
+## Start here
+
+- [Overview](https://trex.fezadan.org/docs/README.md): purpose, run shape, install summary, first run, documentation map
+- [Concepts](https://trex.fezadan.org/docs/concepts.md): transits, false positives, scenarios, priors, evidence, FPP/NFPP, ESS, units
+- [Tutorial](https://trex.fezadan.org/docs/tutorial.md): synthetic run end to end, then a real-target workflow
+- [How TREX works](https://trex.fezadan.org/docs/how-trex-works.md): priors, forward model, likelihood, dilution, evidence estimator, refinement, assumptions and limits
+
+## Using TREX
+
+- [Installation](https://trex.fezadan.org/docs/installation.md): Python 3.12, platforms, pip/uv, dependencies, verification
+- [Inputs](https://trex.fezadan.org/docs/inputs.md): light curve, scene, aperture fractions, contrast curves, background population, units and validation
+- [Outputs](https://trex.fezadan.org/docs/outputs.md): summary.json, scenarios.csv, failure.json, checkpoints, reading checklist
+- [Python API](https://trex.fezadan.org/docs/api.md): target, TargetScene, run_trex_vetting, TrexResult, functions, constants, exceptions, environment variables
+- [Prepared runs](https://trex.fezadan.org/docs/prepared-runs.md): python -m trex.run, the three input files, resume, exit codes
+- [From a TIC ID](https://trex.fezadan.org/docs/from-tic.md): acquisition sources, ordering, retained records, approximations
+- [From a scene](https://trex.fezadan.org/docs/from-scene.md): offline scene and contrast-curve path
+- [Background population](https://trex.fezadan.org/docs/background-population.md): TRILEGAL, cache format, LSST-simulation fallback, interpretation limits
+
+## Reference
+
+- [Scenarios](https://trex.fezadan.org/docs/scenarios.md): the 15 target and 3 per-neighbour scenarios
+- [Module and function reference](https://trex.fezadan.org/docs/modules.md): what each module and public function does, and where it sits in a run
+- [Glossary](https://trex.fezadan.org/docs/glossary.md): terms and registered thresholds
+- [FAQ and troubleshooting](https://trex.fezadan.org/docs/faq.md): questions, error messages, checks
+- [Relationship to TRICERATOPS](https://trex.fezadan.org/docs/differences-from-triceratops.md): provenance and source-level differences
+
+## Measurement records
+
+- [Synthetic quick-start, CPU completion](https://trex.fezadan.org/docs/measurements/quickstart-cpu-2026-11-10.md): one full-budget synthetic run and its limits
+- [Earlier CPU pause](https://trex.fezadan.org/docs/measurements/quickstart-cpu-2026-11-09.md): superseded historical record
+
+## Source and licence
+
+Source: https://github.com/shenfurkan/TREX
+Licence: GPL-3.0-or-later; bundled catalogue tables keep their own notices.
+Scenario framework: Giacalone et al. (2021), https://doi.org/10.3847/1538-3881/abc6af

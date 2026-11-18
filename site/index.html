@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'none'; style-src 'self'; font-src 'self'; img-src 'self' data:; script-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>TREX documentation</title>
+  <meta name="description"
+    content="TREX documentation: install TREX, run it on a TESS transit signal, understand the FPP and NFPP calculation, and read the results.">
+  <link rel="canonical" href="https://trex.fezadan.org/">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="docs.css?v=20261116a">
+  <!-- Cloudflare caches this origin's .css/.js for 7 days; bump the ?v= value
+     whenever docs.css or docs.js changes, otherwise the old copy keeps serving. -->
+</head>
+
+<body>
+
+  <a class="skip" href="#doc">Skip to content</a>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="?page=docs/README.md">
+        <img src="images/trex-mark.webp" alt="" width="40" height="40">
+        <span><strong>TREX</strong><small>Documentation</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="doc-nav">Menu</button>
+      <label class="search">
+        <span class="sr-only">Search documentation pages</span>
+        <input id="search" type="search" placeholder="Search pages" autocomplete="off">
+      </label>
+      <p id="search-status" class="search-status" aria-live="polite"></p>
+      <nav id="doc-nav" aria-label="Documentation">
+        <p class="group">Start here</p>
+        <a href="?page=docs/README.md" data-page="docs/README.md">Overview</a>
+        <a href="?page=docs/concepts.md" data-page="docs/concepts.md">Concepts</a>
+        <a href="?page=docs/tutorial.md" data-page="docs/tutorial.md">Tutorial</a>
+        <a href="?page=docs/how-trex-works.md" data-page="docs/how-trex-works.md">How TREX works</a>
+
+        <p class="group">Using TREX</p>
+        <a href="?page=docs/installation.md" data-page="docs/installation.md">Installation</a>
+        <a href="?page=docs/inputs.md" data-page="docs/inputs.md">Inputs</a>
+        <a href="?page=docs/outputs.md" data-page="docs/outputs.md">Outputs</a>
+        <a href="?page=docs/api.md" data-page="docs/api.md">Python API</a>
+        <a href="?page=docs/prepared-runs.md" data-page="docs/prepared-runs.md">Prepared runs</a>
+        <a href="?page=docs/from-tic.md" data-page="docs/from-tic.md">From a TIC ID</a>
+        <a href="?page=docs/from-scene.md" data-page="docs/from-scene.md">From a scene</a>
+        <a href="?page=docs/background-population.md" data-page="docs/background-population.md">Background population</a>
+
+        <p class="group">Reference</p>
+        <a href="?page=docs/scenarios.md" data-page="docs/scenarios.md">Scenarios</a>
+        <a href="?page=docs/modules.md" data-page="docs/modules.md">Module reference</a>
+        <a href="?page=docs/glossary.md" data-page="docs/glossary.md">Glossary</a>
+        <a href="?page=docs/faq.md" data-page="docs/faq.md">FAQ and troubleshooting</a>
+        <a href="?page=docs/differences-from-triceratops.md" data-page="docs/differences-from-triceratops.md">Relationship to
+          TRICERATOPS</a>
+
+        <p class="group">Plain text</p>
+        <a href="docs/index.md">index.md</a>
+        <a href="docs/llms.txt">llms.txt</a>
+      </nav>
+    </aside>
+
+    <main>
+      <div class="topline">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="https://github.com/shenfurkan/TREX">TREX</a>
+          <span aria-hidden="true">/</span>
+          <a href="?page=docs/README.md">Documentation</a>
+          <span id="crumb-rest"></span>
+        </nav>
+        <a id="raw" class="raw" href="docs/README.md">Raw Markdown</a>
+      </div>
+
+      <div class="content">
+        <article id="doc">
+          <p>Loading documentation.</p>
+        </article>
+        <aside id="toc" class="toc" aria-label="On this page" hidden></aside>
+      </div>
+
+      <nav id="pager" class="pager" aria-label="Previous and next pages" hidden></nav>
+
+      <noscript>
+        <p>This page renders the Markdown documentation in the browser. Without
+          JavaScript, read <a href="docs/README.md">README.md</a> or the
+          <a href="docs/index.md">document index</a> directly.
+        </p>
+      </noscript>
+
+      <footer>
+        <p>TREX is licensed under GPL-3.0-or-later. Bundled catalogue tables keep their own attribution notices.</p>
+        <p>Scenario framework: <a href="https://doi.org/10.3847/1538-3881/abc6af">Giacalone et al. (2021)</a>. Source:
+          <a href="https://github.com/shenfurkan/TREX">github.com/shenfurkan/TREX</a>.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="docs.js?v=20261116a"></script>
+</body>
+
+</html>

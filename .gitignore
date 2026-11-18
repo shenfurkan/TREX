@@ -1,0 +1,38 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage*
+htmlcov/
+.ipynb_checkpoints/
+.env
+.env.*
+.DS_Store
+.idea/
+.vscode/
+
+# Output directories written by the README, tutorial and example notebooks;
+# the TIC notebook also caches archive responses and MIST/GALAH releases there.
+trex-demo/
+trex-quickstart/
+trex-toi-181/
+
+# Blind material, candidate data and the unpublished manuscript.
+blind_custody/
+candidate/
+docs/rnaas/
+paper/rnaas/
+
+# Local agent instructions and working notes (not part of the release).
+AGENTS.md
+CLAUDE.md
+MEMORY.md
+.agents/
+.claude/
+scratch/
+tmp/

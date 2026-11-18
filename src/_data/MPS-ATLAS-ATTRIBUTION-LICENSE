@@ -1,0 +1,18 @@
+The mps-atlas-tess-quadratic-supplement.csv coefficients are derived from
+CDS/VizieR catalog J/A+A/666/A60, tablee3, set 1, TESS passband:
+https://cdsarc.u-strasbg.fr/viz-bin/cat/J/A+A/666/A60
+Catalog DOI: https://doi.org/10.26093/cds/vizier.36660060
+
+Kostogryz, N. M., et al. 2022, Astronomy & Astrophysics, 666, A60,
+https://doi.org/10.1051/0004-6361/202243722, published by EDP Sciences.
+The coefficients are interpolated and reduced from the original tabulated
+center-to-limb intensities; they are not the authors' published coefficients.
+
+CDS states that VizieR data are free for scientific use with explicit citation
+of the original authors and publication including the publisher; commercial
+use depends on the data origin. See:
+https://cds.unistra.fr/vizier-org/licences_vizier.html
+Catalog rights metadata: https://b2find.eudat.eu/dataset/19ccb25e-523e-50b2-ac3a-ee32743b6469
+The article itself is published under CC BY 4.0; the catalog's specific
+redistribution license has not been independently established.
+Sources consulted 2026-11-01.
