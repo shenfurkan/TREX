@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use TREX, please cite this repository and the TRICERATOPS paper."
+title: TREX
+authors:
+  - family-names: "Şen"
+    given-names: "Furkan"
+    orcid: "https://orcid.org/0009-0001-0134-6826"
+    affiliation: "Department of Astronomy and Space Sciences, Ankara University"
+version: 1.0.0
+date-released: 2026-11-24
+repository-code: https://github.com/shenfurkan/TREX
+license: GPL-3.0-or-later
+references:
+  - type: article
+    title: "Vetting of 384 TESS Objects of Interest with TRICERATOPS and Statistical Validation of 12 Planet Candidates"
+    authors:
+      - family-names: Giacalone
+        given-names: Steven
+      - family-names: Dressing
+        given-names: Courtney D.
+    year: 2021
+    doi: 10.3847/1538-3881/abc6af
+    notes: "Giacalone et al. (2021); see the DOI for the full author list."

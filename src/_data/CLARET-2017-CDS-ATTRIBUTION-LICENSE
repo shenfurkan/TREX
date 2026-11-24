@@ -1,0 +1,66 @@
+claret-2017-tess-table25-atlas.csv coefficients
+===============================================
+
+Source: Claret, A. 2017, "Limb and gravity-darkening coefficients for the TESS
+satellite at several metallicities, surface gravities, and microturbulent
+velocities", A&A 600, A30.
+  DOI:     https://doi.org/10.1051/0004-6361/201629705
+  ADS:     2017A&A...600A..30C
+  arXiv:   1804.10295v1
+
+Catalogue: CDS/VizieR J/A+A/600/A30, table25, quadratic TESS limb-darkening
+coefficients from ATLAS plane-parallel model atmospheres.
+  Catalogue DOI: https://doi.org/10.26093/cds/vizier.36000030
+  Retrieval URL: https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J%2FA%2BA%2F600%2FA30%2Ftable25&-out.all=&-out.max=unlimited
+  Retrieved (UTC): 2026-10-07T22:24:58.529115+00:00
+  Frozen response: tests/fixtures/gold_standards/claret_2017_release/table25.tsv
+  Frozen SHA-256:  05103cbe466d777b8b4c33fa3d2de5748cb3d5b9fb3ba173bfebacd99c90ddee
+
+Adopted domain, from the paper's own Table 1 (tess.tex:619, "Table25"):
+  ATLAS, 3500 K - 50000 K, log g 0.0 - 5.0, log[A/H] -5.0 - +1.0,
+  microturbulent velocity 0 - 8 km/s, TESS passband, quadratic law (Eq. 2).
+The published table is not a full rectangle: nodes are missing at some
+(low log g, high Teff) and (very metal-poor, low Teff) combinations. The
+consumer therefore requires four published corner nodes and never fills a
+hole, extrapolates, or interpolates in metallicity.
+
+Method: least-squares fit (LSM) of Eq. 2,
+  I(mu)/I(1) = 1 - a (1 - mu) - b (1 - mu)^2,
+to the ATLAS specific intensities convolved with the TESS transmission curve.
+tess.tex:203-220 states the LSM/FCM distinction; the FCM columns (aPCM, bPCM)
+are not used here, matching the vendored TRICERATOPS grid, which stores the
+LSM pair as u1, u2.
+
+Local transform (no value altered):
+  - kept the V_xi = 2.0 km/s plane only; that is the reference plane of this
+    series (tess.tex:355, 370, 382) and the only plane in the vendored
+    triceratops-1.0.20-ldc_tess.csv;
+  - kept the columns logg, Teff, Z, xi, aLSM, bLSM; dropped aPCM, bPCM, chi2
+    and the Mod marker (every retained row is Mod = A, ATLAS);
+  - rows are verbatim CDS values, one per (logg, Teff, Z) at xi = 2.0.
+
+The rows inside the vendored grid's 3500-10000 K / 3.5-5.0 dex window are
+byte-equal in value to src/trex/_data/triceratops-1.0.20-ldc_tess.csv, which
+TREX loads and validates against this file at import. Outside that window this
+table is the additional published support (log g 0.0-3.5 and Teff 10000-50000 K).
+
+Licence and use: CDS states that VizieR data are free for scientific use with
+explicit citation of the original authors and publication, including the
+publisher; commercial use depends on the data origin
+(https://cds.unistra.fr/vizier-org/licences_vizier.html). The A&A article's own
+redistribution licence has not been independently established from the retained
+copy. The same CDS table is already redistributed by the MIT-licensed
+TRICERATOPS 1.0.20 package as its packaged ldc_tess.csv subset.
+Sources consulted 2026-11-04.
+
+PHOENIX-COND quadratic table 15
+--------------------------------
+The companion file `claret-2017-tess-table15-phoenix-cond.csv` retains all
+`Mod=PC, Type=q` rows from CDS/VizieR J/A+A/600/A30/tableab, the
+quasi-spherical PHOENIX-COND quadratic LSM coefficients of Claret (2017)
+Table 1, Table 15. Retrieval URL:
+https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J%2FA%2BA%2F600%2FA30%2Ftableab&-out.max=unlimited
+Retrieved UTC 2026-11-04T19:40:00Z.
+The CSV preserves `logg,Teff,Z,L/HP,aLSM,bLSM` verbatim; L/HP is the mixing
+length, not the ATLAS `xi` microturbulent velocity. The original table has
+holes and solar metallicity only. The preceding CDS attribution terms apply.

@@ -1,0 +1,36 @@
+# TREX documentation
+
+> TREX 1.0.0 estimates conditional false-positive probabilities for TESS
+> transit signals. It does not validate or confirm planets.
+
+Resolve these links relative to this file to stay on the same release.
+
+## Start here
+
+- [Overview](README.md): purpose and common tasks
+- [Installation](installation.md): Python 3.14, platform requirements and CUDA
+- [Tutorial](tutorial.md): offline synthetic run, then a measured-signal workflow
+- [From a TIC ID](from-tic.md): scene acquisition and its limits
+- [Prepared runs](prepared-runs.md): single-curve and joint observations
+- [Outputs](outputs.md): summary.json, scenarios.csv, failure.json and interpretation
+
+## Reference and explanation
+
+- [Full index](index.md): all pages, including the glossary and troubleshooting
+- [Inputs](inputs.md): photometry, stellar scene, background population and units
+- [Python API](api.md): scene, target, inference, AstroImageJ and Gaia inputs
+- [From a scene](from-scene.md): offline scene and contrast-curve path
+- [Concepts](concepts.md): transits, false positives, scenarios, FPP/NFPP and ESS
+- [How TREX works](how-trex-works.md): priors, forward model, evidence and limits
+- [Relationship to TRICERATOPS](differences-from-triceratops.md): provenance and source-level differences
+
+## Measurement records
+
+- [Synthetic quick-start, CPU completion](measurements/quickstart-cpu-2026-11-10.md): one full-budget synthetic run and its limits
+- [Earlier CPU pause](measurements/quickstart-cpu-2026-11-09.md): superseded historical record
+
+## Source and licence
+
+Source: https://github.com/shenfurkan/TREX/tree/v1.0.0
+Licence: GPL-3.0-or-later; bundled catalogue tables keep their own notices.
+Scenario framework: Giacalone et al. (2021), https://doi.org/10.3847/1538-3884/abc6af
